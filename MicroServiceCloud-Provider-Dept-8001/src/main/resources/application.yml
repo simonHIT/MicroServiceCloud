@@ -31,8 +31,8 @@ eureka:
         instance-id: MicroServiceCloud-Dept-8001 #自定义服务名称信息
         prefer-ip-address: true     #访问路径可以显示IP地址
 info:
-  app.name: atguigu-microservicecloud
-  company.name: www.atguigu.com
+  app.name: Simon-MicroServiceCloud
+  company.name: www.simon.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 
