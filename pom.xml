@@ -10,6 +10,7 @@
     <modules>
         <module>MicroServiceCloud-api</module>
         <module>MicroServiceCloud-Provider-Dept-8001</module>
+        <module>MicroServiceCloud-Consumer-Dept-80</module>
     </modules>
     <packaging>pom</packaging>
 
