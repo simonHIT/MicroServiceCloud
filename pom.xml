@@ -11,6 +11,7 @@
         <module>MicroServiceCloud-api</module>
         <module>MicroServiceCloud-Provider-Dept-8001</module>
         <module>MicroServiceCloud-Consumer-Dept-80</module>
+        <module>MicroServiceCloud-Eureka-7001</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -73,5 +74,27 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <finalName>MicroServiceCloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimit>$</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
