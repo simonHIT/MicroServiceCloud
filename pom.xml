@@ -12,6 +12,8 @@
         <module>MicroServiceCloud-Provider-Dept-8001</module>
         <module>MicroServiceCloud-Consumer-Dept-80</module>
         <module>MicroServiceCloud-Eureka-7001</module>
+        <module>MicroServiceCloud-Eureka-7002</module>
+        <module>MicroServiceCloud-Eureka-7003</module>
     </modules>
     <packaging>pom</packaging>
 
