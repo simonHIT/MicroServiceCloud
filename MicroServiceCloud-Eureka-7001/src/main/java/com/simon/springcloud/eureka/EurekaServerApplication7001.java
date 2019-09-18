@@ -15,8 +15,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * 接收其他服务能够注册进来
  */
 @EnableEurekaServer
-public interface EurekaServerApplication {
+public interface EurekaServerApplication7001 {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerApplication.class,args);
+        SpringApplication.run(EurekaServerApplication7001.class,args);
     }
 }

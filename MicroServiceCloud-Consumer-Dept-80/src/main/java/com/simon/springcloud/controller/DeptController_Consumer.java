@@ -24,29 +24,29 @@ import java.util.List;
 @RequestMapping(value = "/consumer")
 public class DeptController_Consumer {
 
-    public static final String REST_URL_PREFIX="http://localhost:8001";
-
+    //    public static final String REST_URL_PREFIX="http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
     @Autowired
     private RestTemplate restTemplate;
 
     @RequestMapping(value = "/dept/add")
-    public boolean add(Dept dept){
-        return restTemplate.patchForObject(REST_URL_PREFIX+"/dept/add",dept,Boolean.class);
+    public boolean add(Dept dept) {
+        return restTemplate.patchForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
 
     @RequestMapping(value = "/dept/get/{id}")
-    public Dept getDept(@PathVariable("id") Long id){
-        return restTemplate.getForObject(REST_URL_PREFIX+"/dept/get"+id,Dept.class);
+    public Dept getDept(@PathVariable("id") Long id) {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get" + id, Dept.class);
     }
 
     @RequestMapping(value = "/dept/list")
-    public List<Dept> getAllDept(){
-        return restTemplate.getForObject(REST_URL_PREFIX+"/dept/list",List.class);
+    public List<Dept> getAllDept() {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
     }
 
     @RequestMapping(value = "/dept/discovery")
-    public Object discoveryService(){
-        return restTemplate.getForObject(REST_URL_PREFIX+"/dept/discovery",Object.class);
+    public Object discoveryService() {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
     }
 
 }
