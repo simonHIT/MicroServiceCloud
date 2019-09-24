@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import java.util.List;
  * 因此并不需要service，dao等层
  */
 @RestController
-@RequestMapping(value = "/consumer")
+@RequestMapping(value = "/feign")
 public class DeptController_Consumer_Feign {
 
     @Autowired
@@ -40,6 +40,7 @@ public class DeptController_Consumer_Feign {
 
     @RequestMapping(value = "/dept/list")
     public List<Dept> getAllDept() {
+        System.out.println("hello######################");
         return this.deptClientService.list();
     }
 
