@@ -1,4 +1,4 @@
-package simon.springcloud;
+package com.simon.springcloud;
 
 
 import org.springframework.boot.SpringApplication;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableFeignClients(basePackages = {"com.simon.springcloud"})
-@ComponentScan("com.simon.springcloud")
+//@ComponentScan("com.simon.springcloud")
 public interface DeptConsumerApplicationFeign {
 
     public static void main(String[] args) {
