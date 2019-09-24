@@ -25,7 +25,6 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/consumer")
 public class DeptController_Consumer_Feign {
-
     @Autowired
     private DeptClientService deptClientService=null;
 
