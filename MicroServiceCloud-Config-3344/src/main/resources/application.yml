@@ -9,5 +9,5 @@ spring:
       server:
         git:
           uri: https://github.com/simonHIT/MicroServiceCloud-Config.git #GitHub上面的git仓库名字
-          username: simonHIT
+          username: simonhitwh@gmail.com
           password: love1996719

@@ -1,0 +1,3 @@
+spring:
+   application:
+     name:  MicroServiceCloud-Config-Dept-Client
