@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  MicroServiceCloud-Config-3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/simonHIT/MicroServiceCloud-Config.git #GitHub上面的git仓库名字
+          username: simonHIT
+          password: love1996719

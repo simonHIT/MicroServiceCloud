@@ -20,6 +20,7 @@
         <module>MicroServiceCloud-Provider-Dept-Hystrix-8001</module>
         <module>MicroServiceCloud-Consumer-Hystrix-Dashboard</module>
         <module>MicroServiceCloud-Zuul-Gateway-9527</module>
+        <module>MicroServiceCloud-Config-3344</module>
     </modules>
     <packaging>pom</packaging>
 
