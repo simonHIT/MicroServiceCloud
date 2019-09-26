@@ -13,12 +13,11 @@
 
 
     <dependencies>
-        <!-- springCloud Config -->
+        <!-- SpringCloudConfig配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
